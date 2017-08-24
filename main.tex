@@ -1,0 +1,265 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+\usepackage{gensymb}
+% personal data
+\name{Sumedh}{Pendurkar}
+\title{Resume}                               % optional, remove / comment the line if not wanted
+\address{College of Engineering, Pune, Wellesely Road, Shivajinagar, Pune, 411005}{Maharashtra}{India}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+91 9011741004}                   % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{sumedh.pendurkar@gmail.com}                               % optional, remove / comment the line if not wanted
+
+\extrainfo{GitHub Username: sumedh.pendurkar}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+\section{Work Experience}
+
+\vspace{4pt}
+
+\begin{itemize}
+
+	\item{\cventry{May 2017--July 2017}{Research Intern }{IIT
+		Roorkee}{Roorkee}{}{\vspace{2pt} During the period of 2 months, I
+		worked on research in the following domains:}} \begin{enumerate}
+			 \item \textbf{Image Super-Resolution:}
+				 Implemented a naive Multi Image Super Resolution model.
+				 Developed a new Deep Model using a Deconvolutional Neural
+				 Networks which was better than all of the state of art methods
+				 for
+				 this problem of reconstruction. This model was trained and tested on Ucmerced dataset. The results were much
+				 better than existing models.
+			\vspace{3pt}
+			 \item \textbf{Joined autoencoder and classification:}
+					 Conducted few experiments on joint classification with
+					 autoencoded features on Hyper-Spectral Data rather than independent autoencoder and classifier.
+		\end{enumerate}
+	\vspace{3pt}	
+\item{\cventry{April 2016--Present}{Software Development Engineer}{CoEP's Satellite Team(CSAT)}{Pune}{}{}}
+\vspace{3pt}
+
+
+\end{itemize}
+
+\section{Education}
+
+\vspace{3pt}
+
+\subsection{Academic Qualifications}
+
+\vspace{3pt}
+
+\begin{itemize}
+
+\item{\cventry{2015--2019}{Computer Engineering}{College of Engineering, Pune}{Pune}{\textit{CGPA: 9.20}}{}}
+
+\item{\cventry{2013--2015}{HSC}{Vivekanand College, Tarabai Park}{Kolhapur}{\textit{89.7\%}}{}}  % arguments 3 to 6 can be left empty
+
+\item{\cventry{2003--2013}{SSC}{DKTE's High School}{Ichalkaranji}{\textit{96.27\%}}{}}
+
+\end{itemize}
+
+\vspace{2pt}
+
+\subsection{Selected Projects}
+
+\vspace{4pt}
+
+\begin{itemize}
+
+\item{\textbf{Author of word-completion feature GNU-Nano text editor :}%\textit{'Development of an Intelligent Humanoid Robot'}
+
+\vspace{3pt}
+
+		\small{\begin{itemize}
+
+			\item Added a feature to GNU-Nano that completes the word under the cursor when the shortcut  is pressed which
+		on subsequent calls displays the next suggestions.
+			\item Supports UTF-8.
+		 	\item Accepted and released in GNU-Nano v2.7.3 by the maintainer.
+			\end{itemize}
+		}}
+
+		\vspace{6pt}
+
+\item{\textbf{Optical Character Recognition(OCR) for Devanagri Scripts (Incomplete):}
+
+\vspace{3pt}
+
+		\small{
+			\begin{itemize}
+			\item I worked on the classification of characters of this project while others worked on segmentation.
+			\item As of now, basic characters(only %ka khaक ख ग
+				..) segmented by this process were tested using SVM with linear kernel
+				(130 fonts). This was testing on similar fonts and the accuracy was found about to be around 95\%
+			\item Looking forward to use CNN and passing the entire character as feature vector to the network.
+			\end{itemize}
+			}}	
+
+		\vspace{6pt}
+
+\item{\textbf{Mouse Control using Hand Gestures}
+
+\vspace{3pt}
+
+		\small{
+			\begin{itemize}
+					\item The image was binarized and contours were found out.
+					\item The contour with largest area was considered.
+					\item  Convex hull was found out and the angle between the
+					finger-point and the palm point was calculated and if it
+				was less than 90\degree{} fingers were detected.  \item The
+					points of palm were tracked and its co-ordinates were
+					mapped to cover the entire screen resolution.
+					\item Number of fingers denoted what action is to be taken place viz movement, left click, right click.
+			\end{itemize}
+			}}
+		\vspace{6pt}
+
+	
+\item{\textbf{Implementing a Shared Memory on two microcontrollers}
+
+\vspace{3pt}
+
+		\small{
+			\begin{itemize}
+					\item Implemented a shared memory model on SD Card using two ARM7 Controllers.
+					\item The algorithm used was a variation of Dekker's algorithm using two hardware lines for handshaking.
+					\item This resolved problem of deadlocks and starvation.
+			\end{itemize}
+			}}
+
+	\vspace{6pt}
+	\item{\textbf{Testing of various protocols and interfacing with various peripherals on microcontroller}}
+
+\end{itemize}
+
+\section{Specialized skills}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item \textbf{Programming:} 
+	\begin{itemize}
+			\item Proficient : C, Python
+			\item Intermediate : BASH scripting
+			\item Learner : C++, Assembly, Octave/Matlab, Java, Javascript
+	\end{itemize}
+
+\vspace{3pt}
+
+\item \textbf{Tools:} Git, Scons, python regex(re), Linux utilities, Django, Keras, Opencv, GTK, scipy, \LaTeX
+
+\vspace{3pt}
+
+\item \textbf{Other skills:}  Image processing, Machine learning, Deep Learning.
+
+\vspace{3pt}
+
+\item \textbf{Languages:} English, Hindi, Marathi
+
+\end{itemize}
+
+\section{Achievements}
+
+\vspace{3pt}
+
+\begin{itemize}
+
+\item{Felicitation at the hands of Prime Minister Mr. Narendra Modi for the successful launch of `SWAYAM' satellite}
+
+\vspace{3pt}
+
+\item{National Talent Search Holder}
+
+\vspace{3pt}
+
+\item{Scored 208 in JEE Mains and was ranked 130\textsuperscript{th} in state}
+
+\vspace{3pt}
+
+
+\end{itemize}
+
+\section{Extra-curricular activities}
+
+
+\vspace{4pt}
+ 
+ \begin{itemize}
+
+	 \item{\cventry{July 2015--Present}{Volunteer, Co-ordinator, Event Head}{Mindspark}{CoEP}{}{}}
+
+	 \item{\cventry{--}{Player}{Badminton}{}{}{
+			 \begin{itemize}
+					 \item  Runners up at state level for school
+					 \item Won the zonals and selected for state level
+				 	 \item Won the district level multiple times
+			\end{itemize}
+			 }}
+ \end{itemize}
+
+
+ \end{document}
+ % Publications from a BibTeX file without multibib
+ %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+ %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+
+ % Publications from a BibTeX file using the multibib package
+ %\section{Publications}
+ %\nocitebook{book1,book2}
+ %\bibliographystylebook{plain}
+ %\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+ %\nocitemisc{misc1,misc2,misc3}
+ %\bibliographystylemisc{plain}
+ %\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+ %-----       letter       ---------------------------------------------------------
+
+
+
+ %% end of file `template.tex'.
+
