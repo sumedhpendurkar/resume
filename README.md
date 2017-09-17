@@ -1,5 +1,5 @@
 ### Resume
-#My Resume.
+My Resume.
 
 compile it with:
 
