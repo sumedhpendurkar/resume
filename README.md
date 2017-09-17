@@ -4,5 +4,5 @@ My Resume.
 compile it with:
 
 ```
-latemk -pdf main.pdf
+latexmk -pdf main.pdf
 ```
