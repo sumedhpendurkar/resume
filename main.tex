@@ -19,7 +19,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.9]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -60,7 +60,7 @@
 
 \begin{itemize}
 
-	\item{\cventry{May 2018--July 2018}{Summer Technical Analyst}{Goldman Sachs}{Banglore}{}{ Worked on UI/UX part of web application using Angular 4}}
+	\item{\cventry{May 2018--July 2018}{Summer Technical Analyst}{Goldman Sachs}{Banglore}{}{ Worked on UI/UX part of web application using Angular 6}}
 	\item{\cventry{May 2017--July 2017}{Research Intern }{IIT
 		Roorkee}{Roorkee}{}{\vspace{2pt} During the period of 2 months, I
 		worked in the following domains:}} \begin{enumerate}
@@ -68,9 +68,8 @@
 				 Implemented a naive Multi Image Super Resolution model.
 				 Developed a new Deep Model using a Deconvolutional Neural
 				 Networks which was better than all of the state of art methods
-				 for
-				 this problem of reconstruction. This model was trained and tested on Ucmerced dataset. The results were much
-				 better than existing models.
+				 for this problem of reconstruction. This model was trained and tested on Ucmerced dataset. The results were much
+				 better than existing models. Also implemented it in a unsupervised way using zero shot learning.
 			\vspace{3pt}
 			 \item \textbf{Joined autoencoder and classification:}
 					 Conducted few experiments on joint classification with
@@ -78,7 +77,7 @@
 		\end{enumerate}
 	\vspace{3pt}	
 \item{\cventry{April 2016--Present}{Member of Communications subsystem}{CoEP's Satellite Team(CSAT)}{Pune}{}{}}
-\item{\cventry{December 2017--Present}{Student Ambassador for AI}{Intel$\textregistered$ Nervana}{}{}{My responsibilites include, working on projects in association with Intel, hosting and delivering talks and blogs in space of Deep Learning and AI.}}
+\item{\cventry{December 2017--Present}{Student Ambassador for AI}{Intel$\textregistered$ Nervana}{}{}{My responsibilites include working on projects in association with Intel, hosting and delivering talks and blogs in space of Deep Learning and AI.}}
 \vspace{3pt}
 
 
@@ -119,7 +118,30 @@
 
 \begin{itemize}
 
-\item{\textbf{Author of word-completion feature GNU-Nano text editor :}%\textit{'Development of an Intelligent Humanoid Robot'}
+	\item{\textbf{Visual Question Answering Systems (Ongoing)}
+
+\vspace{3pt}
+	\small{\begin{itemize}
+
+			\item Feature extraction from images using fc7 features from VGG model
+			\item Use sequence to sequence modelling with the words encoded as one hot vectors and CNN features.
+
+			\end{itemize}
+	}}
+	
+	\vspace{3pt}
+
+\item{\textbf{Implementating various models for person reidentification}
+
+\vspace{3pt}
+	\small{\begin{itemize}
+		\item Implemented these non-trivial networks using keras custom layers
+	
+	\end{itemize}
+	}}
+
+	\vspace{3pt}
+\item{\textbf{Author of word-completion feature GNU-Nano text editor}%\textit{'Development of an Intelligent Humanoid Robot'}
 
 \vspace{3pt}
 
@@ -132,22 +154,23 @@
 			\end{itemize}
 		}}
 
-		\vspace{6pt}
+		\vspace{3pt}
 
-\item{\textbf{Optical Character Recognition(OCR) for Devanagri Scripts (Incomplete):}
+\item{\textbf{Optical Character Recognition(OCR) for Devanagri Scripts (Ongoing)}
 
 \vspace{3pt}
 
 		\small{
 			\begin{itemize}
-			\item I worked on the classification of characters of this project while others worked on segmentation.
-			\item As of now, basic characters%(only ka khaक ख ग ..)
-				segmented by this process were tested using SVM with linear kernel
-				(130 fonts). This was testing on similar fonts and the accuracy was found about to be around 95\%
+			\item I worked on the classification of characters and segmentation of words.
+			\item As of now, basic characters %(only ka khaक ख ग ..)
+				segmented were tested using SVM with linear kernel
+				(130 fonts). Testing on similar fonts and the accuracy was found about to be around 95\%.
+			\item Having a robust segmentation techniques would yeild higher results for the entire document.
 			\end{itemize}
 			}}	
 
-		\vspace{6pt}
+		\vspace{3pt}
 
 \item{\textbf{Mouse Control using Hand Gestures}
 
@@ -155,17 +178,12 @@
 
 		\small{
 			\begin{itemize}
-					\item The image was binarized and contours were found out.
-					\item The contour with largest area was considered.
-					\item  Convex hull was found out and the angle between the
-					finger-point and the palm point was calculated and if it
-				was less than 90\degree{} fingers were detected.  \item The
-					points of palm were tracked and its co-ordinates were
-					mapped to cover the entire screen resolution.
+					\item Contours were used to find out the hand region
+					\item Convex hull was used to find out number of fingers raised depending on the angle between finger points and palm points.
 					\item Number of fingers denoted what action is to be taken place viz movement, left click, right click.
 			\end{itemize}
 			}}
-		\vspace{6pt}
+		\vspace{3pt}
 
 	
 \item{\textbf{Implementing a Shared Memory on two microcontrollers}
@@ -175,12 +193,11 @@
 		\small{
 			\begin{itemize}
 					\item Implemented a shared memory model on SD Card using two ARM7 Controllers.
-					\item The algorithm used was a variation of Dekker's algorithm using two hardware lines for handshaking.
-					\item This resolved problem of deadlocks and starvation.
+					\item The algorithm used was a variation of Dekker's algorithm using two hardware lines for handshaking to solve the problem of deadlocks and starvation.
 			\end{itemize}
 			}}
 
-	\vspace{6pt}
+	\vspace{3pt}
 	\item{\textbf{Testing of various protocols and interfacing with various peripherals on microcontroller}}
 
 \end{itemize}
@@ -194,17 +211,17 @@
 \item \textbf{Programming:} 
 	\begin{itemize}
 			\item Proficient : C, Python
-			\item Intermediate : BASH scripting
-			\item Learner : C++, Assembly, Octave/Matlab, Java, Javascript
+			% \item Intermediate : BASH scripting
+			\item Learner : BASH scripting, Assembly, Octave/Matlab, Javascript % Java, C++
 	\end{itemize}
 
 \vspace{3pt}
 
-\item \textbf{Tools:} Git, Scons, python regex(re), Linux utilities, Django, Keras, Opencv, GTK, scipy, Angular, \LaTeX
+\item \textbf{Tools:} Git, Linux utilities, Keras, Opencv, GTK, scipy, Angular, pandas, \LaTeX % python regex, Django, Scons
 
 \vspace{3pt}
 
-\item \textbf{Other skills:}  Image processing, Machine learning, Deep Learning, Web Development.
+\item \textbf{Other skills:} Computer Vision, Machine learning, Deep Learning. %Web development.
 
 \vspace{3pt}
 
